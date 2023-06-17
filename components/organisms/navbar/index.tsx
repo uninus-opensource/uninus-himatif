@@ -1,8 +1,8 @@
-"use client";
 import { FC, ReactElement, useState } from "react";
 import { CalendarIcon, HamburgerIcon, IIcon } from "@/components";
-import HimatifIcon from "@/public/himatif.png";
 import { motion } from "framer-motion";
+import HimatifIcon from "@/public/himatif.png";
+import Image from "next/image";
 
 export const Navbar: FC = (): ReactElement => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -20,9 +20,9 @@ export const Navbar: FC = (): ReactElement => {
         animate={{
           x: [-400, 0],
         }}
-        className="flex items-center w-28 lg:w-[8vw] justify-around k text-xl "
+        className="flex items-center w-28 lg:w-[8vw] justify-around text-xl "
       >
-        <img src={HimatifIcon.src} alt="Himatif" className="w-[2rem]" />
+        <Image src={HimatifIcon.src} width={32} height={32} alt="Himatif" className="w-[2rem]" />
         <figcaption>Himatif</figcaption>
       </motion.figure>
 

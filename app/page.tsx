@@ -1,6 +1,10 @@
 import { FC, ReactElement } from "react";
-import { TextField } from "@/components";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Himatif Uninus",
+  description: "Himatif Uninus Official Website"
+}
 
 const Home: FC = (): ReactElement => {
   return (
