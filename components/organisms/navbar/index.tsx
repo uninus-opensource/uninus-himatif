@@ -12,7 +12,7 @@ export const Navbar: FC = (): ReactElement => {
   };
 
   return (
-    <header className="flex border-2 border-black justify-between items-center lg:px-12 px-7 h-[10vh] text-[#020181] font-semibold text-lg">
+    <header className="flex justify-between items-center lg:px-12 px-7 h-[10vh] text-[#020181] font-semibold text-lg">
       <motion.figure
         style={{
           x: -400,
